@@ -18,6 +18,8 @@ type SkillRank struct {
 	Name        string `json:"name"`        // The rank's name; always null except for on set and group bonus skills
 	Description string `json:"description"` // The rank's description
 	Level       int    `json:"level"`       // The skill level of the rank
+
+	Skill Skill `json:"skill"`
 }
 
 type SkillIcon struct {
